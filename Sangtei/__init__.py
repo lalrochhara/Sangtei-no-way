@@ -180,7 +180,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
       
-REDIS = StrictRedis.from_url(redis://NickyDb:19970515Jenny%%@@@redis-18562.c266.us-east-1-3.ec2.cloud.redislabs.com:18562,decode_responses=False)
+REDIS = StrictRedis.from_url(decode_responses=True)
 try:
     REDIS.ping()
     LOGGER.info("Your redis server is now alive!")
